@@ -15,21 +15,17 @@ git config --global user.email diuthym123@gmail.com
 git status
 git add -A
 git commit -m "Checkin Comment here"
-git push -u origin mainit
+git push -u origin main
 ```
 
 
-### testing only, delte me
-```bash
-this is for testing
-```
 
 ### [A New Branch for your work](https://www.atlassian.com/git/tutorials/using-branches)
 ```bash
 # Let us say, you are creating a new branch for your dev work
 # let us create a branch dev1 then.
 git clone https://github.com/diuthym/technote.git
-cd MyHelp
+cd technote
 git branch dev1
 git checkout dev1
 
@@ -40,13 +36,13 @@ git add -A
 git commit -m "dev1 changes"
 git push origin dev1
 
-# Dev work completed, then switch branch to master
-# pull the dev1 branch changes to master
-git checkout master
+# Dev work completed, then switch branch to main
+# pull the dev1 branch changes to main
+git checkout main
 git pull https://github.com/diuthym/technote.git dev1
 
 # now you have dev1 changes, push it to remote
-git push origin master
+git push origin main
 
 # Delete the branch and push
 git push origin --delete dev1
@@ -59,7 +55,7 @@ git push origin :dev1
 # pull changes from some other repository
 git pull https://github.com/msatyan/SomeOtherRepository.git <branch on that repo>
 git pull https://github.com/msatyan/SomeOtherRepository.git SomeOtherTask
-git pull https://github.com/msatyan/SomeOtherRepository.git master
+git pull https://github.com/msatyan/SomeOtherRepository.git main
 
 # Resolve conflicts if any (complete the mergetool setup first)
 git mergetool
@@ -139,20 +135,20 @@ git add -A
 git commit -am "the first commit"
 ```
 
-- Delete master Branch – Now you can delete the master branch from your git repository.
+- Delete main Branch – Now you can delete the main branch from your git repository.
 ```
-git branch -D master
+git branch -D main
 
 ```
 
-- Rename Current Branch – After deleting the master branch, let’s rename newly created branch name to master.
+- Rename Current Branch – After deleting the main branch, let’s rename newly created branch name to main.
 ```
-git branch -m master
+git branch -m main
 
 ```
 - Push Changes – You have completed the changes to your local git repository. Finally, push your changes to remote (Github) repository forcefully.
 ```
-git push -f origin master
+git push -f origin main
 ```
 
 
